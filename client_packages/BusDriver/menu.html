@@ -1,0 +1,40 @@
+﻿<html>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.5.1.min.js"></script>
+	<body>
+		<div id="menu" class="hide">
+			<div class="title"></div>
+			<div class="info">Вы согласны работать водителем автобуса?</div>
+			<div class="buttons">
+				<div class="yes">Согласиться</div>
+				<div class="no">Отказаться</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+<script>
+// лучше вынести в отдельный файл, но сроки жмут 
+function show() {
+	$("#menu").show().animate({
+	    opacity: 1
+	}, 500);
+};
+
+$(".buttons div").click(function() {
+	if ($(this).hasClass("yes")) {
+		mp.trigger('jobAgreedment', true);
+	} else {
+		mp.trigger('jobAgreedment', false);
+	}
+	
+	$("#menu").animate({
+	    opacity: 0
+	}, 500, function() {
+	    $(this).hide();
+	});
+});
+
+</script>

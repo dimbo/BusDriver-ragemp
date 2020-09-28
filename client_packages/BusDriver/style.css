@@ -1,0 +1,67 @@
+﻿html {
+  height: 100%;
+  font-family: Arial;
+  font-weight: 100;
+  color: #DDD;
+  text-align: center;
+}
+.hide{
+  display: none;
+  opacity: 0;
+}
+
+#menu{
+  width: 712px;
+  height: 414px;
+  position: absolute;
+  top: calc(50% - 207px);
+  left: calc(50% - 356px);
+  right: 50%;
+  bottom: 50%;
+  background-color: #202020;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.title{
+  width: 712px;
+  height: 265px;
+  background-image: url(title-bg.jpg);
+}
+.info{
+  height: 83px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 83px;
+}
+.buttons{
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+.yes, .no{
+  height: inherit;
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 300ms linear;
+}
+.yes{
+  background-color: #03a403;
+  margin-right: 2px;
+}
+.yes:hover{
+  background-color: #07c707;
+}
+
+.no{
+  background-color: #a40303;
+}
+.no:hover{
+  background-color: #cd0404;
+}
