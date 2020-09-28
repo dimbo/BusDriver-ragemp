@@ -24,8 +24,8 @@ mp.events.add({
 	},
 	"jobCreateBlip": (x,y,z) => {
 		let blip = mp.blips.new(Blips.config.type, new mp.Vector3(x, y, z),
-		    {
-		        name      : Blips.config.name,
+		{
+		    name      : Blips.config.name,
 	            shortRange: Blips.config.shortRange,
 	            scale     : Blips.config.scale,
 	            color     : Blips.config.color
